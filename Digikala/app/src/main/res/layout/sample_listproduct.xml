@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:gravity="center|right"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListProduct_LinearLayout"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginRight="16dp"
+            android:id="@+id/samplelistproduct_text"
+            android:layout_width="wrap_content"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:text="گوشی موبایل" />
+
+        <ImageView
+            android:layout_marginRight="40dp"
+            android:id="@+id/samplelistproduct_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lab1" />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:background="#dad4d4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+
+</LinearLayout>

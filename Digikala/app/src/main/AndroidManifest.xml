@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.farshid.digikala">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_store1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_store1"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:node="replace">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".Admin.upload.upload">
+
+
+
+
+        </activity>
+        <activity
+            android:name=".Sign.Sign"
+            android:theme="@style/Activity_Sign" />
+        <activity android:name=".Sign.SignUp" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/Activity_Splash" />
+        <activity android:name=".Activity_show">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="app" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_Fani" />
+        <activity android:name=".ActivityCommint" />
+        <activity android:name=".Activity_Add_Commint" />
+        <activity android:name=".Activity_Review" />
+        <activity android:name=".Activity_ListProduct" />
+        <activity android:name=".Activity_ShowSelectedlistProduct" />
+        <activity android:name=".ActivityFilter" />
+        <activity
+            android:name=".Activity_Arrange"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name=".Activity_search" />
+        <activity android:name=".zaren" />
+        <activity android:name=".ApiService.Retrofit" />
+        <activity android:name=".interest" />
+        <activity android:name=".Admin.insert_post">
+
+        </activity>
+    </application>
+
+</manifest>

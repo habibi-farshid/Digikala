@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:gravity="right"
+            android:textColor="#666363"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:id="@+id/Fani_Name2"
+            android:textSize="12dp"
+            />
+         <ImageView
+             android:layout_width="0.5sp"
+             android:background="#bab7b7"
+             android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="16dp"
+            android:textColor="#666363"
+
+            android:text="تعداد سیم کارت"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:id="@+id/Fani_Name1"
+            />
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="#b6b3b3"
+        android:layout_height="0.5sp" />
+
+
+</LinearLayout>

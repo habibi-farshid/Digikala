@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Linnear_ratecommint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginRight="36dp"
+    android:layout_marginLeft="36dp"
+    android:layout_marginTop="2dp"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="11dp"
+        android:id="@+id/rateCommint_MyProgress"
+        android:progressDrawable="@drawable/drawable_progress"
+        android:layout_weight="0.3"
+        android:indeterminate="false"
+        android:progress="90" />
+
+    <TextView
+        android:id="@+id/TextRateCommint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:text="نوآوری"
+        android:textColor="#7e7c7c"
+        android:textSize="11dp" />
+
+
+</LinearLayout>

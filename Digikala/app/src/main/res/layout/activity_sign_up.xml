@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign.SignUp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_signup"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="#ee3f3e"
+        android:elevation="20dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_store"
+                    android:tint="#fafafa"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/sign_up_id_icon_search"
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_search"
+                    android:tint="#fafafa" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:layout_weight="0.75"
+                android:gravity="right|center">
+
+                <TextView
+                    android:id="@+id/sign_up_id_text_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="32dp"
+                    android:text="ثبت نام"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/ActivityMain_Menu"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_go2"
+                    android:tint="#ffffff" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/toolbar_signup"
+        android:background="#ee3f3e"></LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Textwellcomesignout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="به فروشگاه ما خوش آمدید!!"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/activity_signup_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Signup_descreption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:text="برای ثبت نام ایمیل و کلمه عبور خود را وارد کنید."
+                    android:textSize="13dp" />
+                <!--ایمیل-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/shape_linear_sign"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <EditText
+                        android:id="@+id/ID_Email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:background="@android:color/transparent"
+                        android:hint="شماره تلفن"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="26dp"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/icon_email" />
+                    <!--ایمیل-->
+
+                </LinearLayout>
+
+                <!--کلمه ورود-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/shape_linear_sign"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <EditText
+                        android:id="@+id/ID_Pass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:background="@android:color/transparent"
+                        android:hint="کلمه عبور"
+                        android:inputType="textPassword"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="26dp"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/icon_lock" />
+                </LinearLayout>
+                <!--کلمه ورود تکرار-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_linear_sign"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <EditText
+                        android:id="@+id/ID_Pass2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:background="@android:color/transparent"
+                        android:hint="تکرار کلمه عبور"
+                        android:inputType="textPassword"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="26dp"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/icon_lock" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <!--لایه کلمه عبورم را فراموش کرده ام؟-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center">
+
+                </LinearLayout>
+                <!--ثبت نام در دیجی کالا-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/TextError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:text="این کاربر از قبل ثبت نام کرده است."
+                    android:textColor="#049602"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <!--ورود به دیجی کالا-->
+                <com.example.myloadingbutton.MyLoadingButton
+                    android:id="@+id/SignUp_my_loading_button"
+                    android:layout_width="wrap_content"
+                    app:mlb_label="ثبت نام"
+                    app:mlb_labelColor="#ffffff"
+                    app:mlb_labelSize="10sp"
+                    app:mlb_animationDuration="1000"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="40dp"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</RelativeLayout>

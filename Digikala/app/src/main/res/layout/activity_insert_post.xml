@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cf1b2d"
+        android:elevation="20dp"
+        android:minHeight="?attr/actionBarSize">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pageAdmin_InsertPost_Toolbar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="درج محصولات "
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ActivityinsertPost_linearMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <!---->
+                <!--<com.weiwangcn.betterspinner.library.BetterSpinner-->
+                <!--android:id="@+id/BTeacherschool_School"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="مدرسه"-->
+                <!--android:textSize="12sp"-->
+                <!--/>-->
+
+                <EditText
+                    android:id="@+id/pageAdmin_InsertPost_Edit_Text_NameProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="نام محصول"
+                    android:maxLength="15"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/pageAdmin_InsertPost_Edit_Text_EnglishNameProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="نام مختصر انگلیسی"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/pageAdmin_InsertPost_Edit_Text_Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="قیمت"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/pageAdmin_InsertPost_Edit_Text_PrePrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="قیمت با اعمال تخفیف"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:textSize="13dp" />
+
+
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/pageAdmin_InsertPost_Spinner_kindProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="نوع محصول"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#ce1b2d"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/pageAdmin_InsertPost_Text_Insert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="درج مشخصات"
+                        android:textColor="#ffff"
+                        android:textSize="13dp"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pageAdmin_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.weiwangcn.betterspinner.library.BetterSpinner
+                        android:id="@+id/pageAdmin_InsertPost_Spinner_Color"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="رنگ"
+                        android:textSize="12sp" />
+
+                    <com.weiwangcn.betterspinner.library.BetterSpinner
+                        android:id="@+id/pageAdmin_InsertPost_Spinner_guarantee"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="گارانتی"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/pageAdmin_InsertPost_Edit_Text_OS"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="سیستم عامل "
+                        android:padding="8dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/pageAdmin_InsertPost_Edit_Text_Processor"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="پردازنده"
+                        android:padding="8dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/pageAdmin_InsertPost_Edit_Text_Dimensions"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="ابعاد صفحه"
+                        android:padding="8dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/pageAdmin_InsertPost_Edit_Text_Sd"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="حافظه داخلی"
+                        android:padding="8dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/pageAdmin_InsertPost_Edit_Text_battery"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="باتری"
+                        android:padding="8dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/pageAdmin_InsertPost_Edit_Text_Camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="دوربین"
+                        android:padding="8dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/pageAdmin_InsertPost_Edit_Text_wight"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="وزن"
+                        android:padding="8dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="13dp" />
+
+                    <com.weiwangcn.betterspinner.library.BetterSpinner
+                        android:id="@+id/pageAdmin_InsertPost_Spinner_SimCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="سیمکارت"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/pageAdmin_InsertPost_Edit_Text_Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="توضیحات اضافی "
+                        android:maxLines="15"
+                        android:padding="8dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+
+
+                <com.example.myloadingbutton.MyLoadingButton
+                    android:id="@+id/pageAdmin_Button_InsertPost"
+                    android:layout_width="wrap_content"
+                    app:mlb_label="ثبت کالا"
+                    app:mlb_labelColor="#ffffff"
+                    app:mlb_labelSize="10sp"
+                    app:mlb_animationDuration="1000"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="40dp"
+                    />
+
+
+                <!--<Button-->
+                    <!--android:id="@+id/pageAdmin_Button_InsertPost"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_marginBottom="25dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="#ce1b2d"-->
+                    <!--android:text="ثبت کالا"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:textStyle="bold" />-->
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/Activity_insert_imagetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Activity_insert_imagetext"
+                android:textColor="#2f2f2f"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/pageAdmin_InsertPost_Camera"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_default_product"
+                android:visibility="gone" />
+
+            <com.example.myloadingbutton.MyLoadingButton
+                android:id="@+id/pageAdmin_Button_InsertPost2"
+                android:layout_width="wrap_content"
+                app:mlb_label="ثبت عکس شاخص"
+                app:mlb_labelColor="#ffffff"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                app:mlb_labelSize="5sp"
+                android:visibility="gone"
+                app:mlb_animationDuration="1000"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="40dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:id="@+id/linear_Gallery"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pageAdmin_InsertPost_Text_Gallery"
+                    android:text="انتخاب عکس از ابعاد دیگر"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/pageAdmin_InsertPost_Image_Gallery"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_default_product"
+                     />
+
+                <Button
+                    android:id="@+id/pageAdmin_Button_InsertPost_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ce1b2d"
+                    android:text="ثبت عکس 1"
+                    android:textColor="#fff"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

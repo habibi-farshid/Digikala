@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layoutDirection="rtl">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/AddCommint_TextRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="#ff0000"
+        android:textSize="12dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:text="نوآوری" />
+
+    <com.hedgehog.ratingbar.RatingBar
+        android:id="@+id/MyRating"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hedgehog:clickable="true"
+        hedgehog:starCount="5"
+        hedgehog:starEmpty="@drawable/star_yellow_empty"
+        hedgehog:starFill="@drawable/star_yellow_fill"
+        hedgehog:starImageHeight="40dp"
+        hedgehog:starImagePadding="5dp"
+        hedgehog:starImageWidth="40dp" />
+
+    <TextView
+        android:gravity="right"
+        android:layout_marginRight="40dp"
+        android:id="@+id/AddCommint_CountRating"
+        android:textSize="12dp"
+        android:textColor="#ff0000"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="2" />
+
+
+
+</LinearLayout>
+
+
+</LinearLayout>

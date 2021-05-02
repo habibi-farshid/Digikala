@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:layoutDirection="rtl"
+    tools:context=".Activity_Review">
+    <include layout="@layout/toolbar_nagd"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_weight="0.4"
+            android:id="@+id/ActivityNagd_Linear"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/ActivityNagd_Topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_margin="8dp"
+                android:textColor="#837e7e"
+                android:text="عنوان نقد و بررسی"
+                />
+            <EditText
+                android:id="@+id/ActivityNagd_EditTextTopic"
+                android:background="@drawable/shape_linnearedit"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layoutDirection="rtl"
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="84dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/ActivityNagd_TopicStrengths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_margin="8dp"
+                android:textColor="#837e7e"
+                android:text="نقاط قوت"
+                />
+            <EditText
+                android:id="@+id/ActivityNagd_EditTextTopicStrengths"
+                android:background="@drawable/shape_linnearedit"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="0.1"
+
+            android:layoutDirection="rtl"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/ActivityNagd_TopicWeakPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_margin="8dp"
+                android:textColor="#837e7e"
+                android:text="نقاط ضعف"
+                />
+            <EditText
+                android:id="@+id/ActivityNagd_EditTextTopicWeakPoints"
+                android:background="@drawable/shape_linnearedit"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/ActivityNagd_TopicDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_margin="8dp"
+                android:textColor="#837e7e"
+                android:text="توضیحات نقد و بررسی "
+                />
+            <EditText
+                android:layoutDirection="rtl"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:id="@+id/ActivityNagd_EditTextTopicDescription"
+                android:background="@drawable/shape_linnearedit"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="#3249df"
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:background="#3249df"
+                android:id="@+id/ActivityNagd_ButtonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:text="ثبت نقد و بررسی "
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

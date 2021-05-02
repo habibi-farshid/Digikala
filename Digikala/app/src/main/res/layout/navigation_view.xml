@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:layout_gravity="right">
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ee3f3e"
+                android:orientation="vertical">
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:background="@drawable/digi" />-->
+            </LinearLayout>
+<!--ورود یا ثبت نام-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Linnear_Sign"
+                android:background="#ee3f3e"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/IdSinIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="8dp"
+                    android:padding="5dp"
+                    tools:text="ورود و ثبت نام"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/account" />
+
+            </LinearLayout>
+            <!--سبد خرید-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ee3f3e"
+                android:visibility="gone"
+                android:id="@+id/Linnear_Store"
+                android:gravity="right">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="8dp"
+                    android:padding="5dp"
+                    android:text="سبد خرید "
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+            <!--خروج -->
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Linnear_Exit"
+                android:background="#ee3f3e"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="8dp"
+                    android:padding="5dp"
+                    android:text="خروج"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/navigationView_ListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:layoutDirection="rtl">
+
+            </ListView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5sp"
+                android:src="#636161"></ImageView>
+
+            <ListView
+                android:id="@+id/navigationView_ListView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:layoutDirection="rtl">
+
+            </ListView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5sp"
+                android:src="#636161"></ImageView>
+
+            <ListView
+                android:id="@+id/navigationView_ListView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:layoutDirection="rtl"></ListView>
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5sp"
+                android:src="#636161"></ImageView>
+
+            <ListView
+                android:id="@+id/navigationView_ListView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:layoutDirection="rtl"></ListView>
+        </LinearLayout>
+
+    </android.support.design.widget.NavigationView>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">فروشگاه من</string>
+    <string name="samole">برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.  </string>
+    <string name="toast_Delete_interest">از علاقه مندی ها حذف شد!</string>
+    <string name="toast_add_interest">به  علاقه مندی ها اضافه شد!</string>
+
+
+    <array name="color">
+        <item>آبی</item>
+        <item>قرمز</item>
+        <item>سفید</item>
+        <item>مشکی</item>
+        <item>بنفش</item>
+        <item>زرد</item>
+        <item>نارنجی</item>
+        <item>آبی آسمانی</item>
+        <item>آبی نفتی</item>
+        <item>سبز</item>
+        <item>خاکستری</item>
+        <item>نیلی</item>
+
+
+    </array>
+
+    <array name="price">
+        <item>بیشتر از 100 تومان</item>
+        <item>بیشتر از 500 تومان</item>
+        <item>بیشتر از 1 میلیون تومان</item>
+        <item>بیشتر از 1.5 میلیون تومان</item>
+        <item>بیشتر از2 میلیون تومان</item>
+        <item>بیشتر از2.5 میلیون تومان</item>
+        <item>بیشتر از3 میلیون تومان</item>
+
+    </array>
+
+
+
+    <string name="upload_image">UPLOAD IMAGE</string>
+    <string name="Activity_insert_imagetext">انتخاب عکس شاخص برای محصول</string>
+    <string name="read_file">This app needs access to your file storage so that it can read photos.</string>
+
+</resources>

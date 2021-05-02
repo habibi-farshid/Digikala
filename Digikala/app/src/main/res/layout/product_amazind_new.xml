@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Linear_MyTime"
+    android:layoutDirection="rtl">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:background="#ffffff"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/amazing_image_new"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/image_labtop1" />
+
+            <TextView
+                android:id="@+id/amazing_name_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Lenovo ida pad" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#9c9797" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/amazing_price_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="130000"
+                    android:textColor="#07960b"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/amazing_preprice_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="150000"
+                    android:textColor="#d10408"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <!--<ImageView-->
+            <!--android:layout_width="90dp"-->
+            <!--android:layout_height="wrap_content" -->
+            <!--android:src="@drawable/redline"-->
+            <!--/>-->
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

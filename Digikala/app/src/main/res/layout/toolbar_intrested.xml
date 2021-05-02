@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainPage_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#ee3f3e"
+    android:elevation="20dp"
+    android:minHeight="?attr/actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لیست علاقه مندی ها"
+            android:layout_marginRight="16dp"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:id="@+id/Activity_interest_toolbar_text"
+            />
+        <ImageView
+            android:id="@+id/Activity_interest_toolbar_icon_back"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_go3"
+            />
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
+
