@@ -166,7 +166,7 @@ public class insert_post extends AppCompatActivity implements View.OnClickListen
     private static final String TAG = upload.class.getSimpleName();
     private static final int REQUEST_GALLERY_CODE = 200;
     private static final int READ_REQUEST_CODE = 300;
-    private static final String SERVER_PATH = "http://farshidhabibi.ir/farshid/diji/";
+    private static final String SERVER_PATH = "http://learnshipp.ir/farshid/diji/";
     private Uri uri;
 
 

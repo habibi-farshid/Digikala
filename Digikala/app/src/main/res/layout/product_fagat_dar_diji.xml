@@ -7,7 +7,7 @@
     android:layoutDirection="rtl">
 
         <LinearLayout
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#ffffff"
             android:gravity="center"
@@ -15,19 +15,24 @@
 
             <ImageView
                 android:id="@+id/amazing_image_fagat"
-                android:layout_width="160dp"
-                android:layout_height="150dp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
                 android:layout_marginBottom="16dp"
-                android:src="@drawable/image_labtop1" />
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_labtop1"
+                />
 
             <TextView
                 android:id="@+id/amazing_name_fagat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:layout_marginBottom="4dp"
                 android:layout_marginTop="4dp"
-                android:text="Lenovo ida pad" />
+                android:text="Lenovo ida pad"
+                android:textStyle="bold"
+                android:textSize="@dimen/SizeNameProdouct"
+                />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -56,7 +61,7 @@
                     android:layout_height="wrap_content"
                     android:text="150000"
                     android:textColor="#0410be"
-                    android:textSize="11dp" />
+                    android:textSize="@dimen/SizeNameProdouct" />
             </LinearLayout>
 
             <!--<ImageView-->

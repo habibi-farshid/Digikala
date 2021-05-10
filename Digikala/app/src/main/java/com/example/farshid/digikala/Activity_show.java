@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -664,6 +665,7 @@ public class Activity_show extends AppCompatActivity implements BaseSliderView.O
                         String Image = jsonObject.getString("Image");
                         String im = "http://learnshipp.ir/farshid/diji/image/Gallary/" + Image;
                         UrlPic.add(im);
+                        Toast.makeText(Activity_show.this,""+Image,Toast.LENGTH_LONG).show();
                         TextSliderView textSliderView = new TextSliderView(Activity_show.this);
                         textSliderView
                                 .image(im).setScaleType(BaseSliderView.ScaleType.Fit).empty(R.drawable.sliderimage)

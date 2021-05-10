@@ -118,8 +118,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         productAmazing = new ProductAmazing(this);
         productAmazing.Id = Id;
         productAmazing.Cat = Cat1;
-        String y1 = String.valueOf(persian.PerisanNumber(price)) + "تومان";
-        String y2 = String.valueOf(persian.PerisanNumber(preprice)) + "تومان";
+        String y1 = String.valueOf(persian.PerisanNumber(price)) + "هزار تومان";
+        String y2 = String.valueOf(persian.PerisanNumber(preprice)) + "هزار تومان";
         ProductAmazing.Name.setText(name);
         ProductAmazing.PrePrice.setText(y2);
         ProductAmazing.Price.setText(y1);
@@ -132,8 +132,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void CreateProductamazing_new(String Id, String name, String price, String preprice, String image, String Cat1) {
         productAmazing_time = new ProductAmazing_Time(this);
-        String y1 = String.valueOf(persian.PerisanNumber(price)) + "تومان";
-        String y2 = String.valueOf(persian.PerisanNumber(preprice)) + "تومان";
+        String y1 = String.valueOf(persian.PerisanNumber(price)) + "هزار تومان";
+        String y2 = String.valueOf(persian.PerisanNumber(preprice)) + "هزار تومان";
         ProductAmazing_Time.Name.setText(name);
         productAmazing_time.Id = Id;
         productAmazing_time.Cat = Cat1;
@@ -148,8 +148,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void CreateProductamazing_sell(String Id, String name, String price, String preprice, String image, String Cat1) {
         productAmazing_sell = new ProductAmazing_Sell(this);
-        String y1 = String.valueOf(persian.PerisanNumber(price)) + "تومان";
-        String y2 = String.valueOf(persian.PerisanNumber(preprice)) + "تومان";
+        String y1 = String.valueOf(persian.PerisanNumber(price)) + "هزار تومان";
+        String y2 = String.valueOf(persian.PerisanNumber(preprice)) + "هزار تومان";
         ProductAmazing_Sell.Name.setText(name);
         productAmazing_sell.Id = Id;
         productAmazing_sell.Cat = Cat1;
@@ -164,10 +164,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void CreateProductamazing_fagat(String Id, String name, String price, String preprice, String image, String Cat1) {
         productAmazing_fagat = new ProductAmazing_fagat(this);
-        String y1 = String.valueOf(persian.PerisanNumber(price)) + "تومان";
-        String y2 = String.valueOf(persian.PerisanNumber(preprice)) + "تومان";
+        String y1 = String.valueOf(persian.PerisanNumber(price)) + "هزار تومان";
+        String y2 = String.valueOf(persian.PerisanNumber(preprice)) + "هزار تومان";
         ProductAmazing_fagat.Name.setText(name);
-        ProductAmazing_fagat.PrePrice.setText(y2);
+        ProductAmazing_fagat.PrePrice.setText(y1);
         ProductAmazing_fagat.Price.setText(y1);
         productAmazing_fagat.Id = Id;
         productAmazing_fagat.Cat = Cat1;
@@ -528,7 +528,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("Cat", "5");
+                params.put("Cat", "3");
                 return params;
             }
         };
@@ -576,7 +576,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("Cat", "6");
+                params.put("Cat", "3");
                 return params;
             }
         };
@@ -624,7 +624,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("Cat", "5");
+                params.put("Cat", "3");
                 return params;
             }
         };
@@ -770,16 +770,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void InitilizeArrayList_UrlImage() {
-        UrlPic.add("http://learnshipp.ir/farshid/diji/image/banner/download2.jpg");
-        UrlPic.add("http://learnshipp.ir/farshid/diji/image/banner/download.jpg");
-        UrlPic.add("http://learnshipp.ir/farshid/diji/image/banner/Product Banner.jpg");
-        UrlPic.add("http://learnshipp.ir/farshid/diji/image/banner/unnamed.jpg");
+        UrlPic.add("http://learnshipp.ir/farshid/diji/image/banner/Kif3.jpg");
+        UrlPic.add("http://learnshipp.ir/farshid/diji/image/banner/Kif2.jpg");
+        UrlPic.add("http://learnshipp.ir/farshid/diji/image/banner/Kif1.jpg");
+        UrlPic.add("http://learnshipp.ir/farshid/diji/image/banner/Kif3.jpg");
 
 //        ///////
-        names.add("phone");
+        names.add("کیف مجلسی");
         names.add("shirt");
         names.add("laptop");
         names.add("pad");
+
     }
 
 

@@ -13,7 +13,7 @@
         android:padding="16dp">
 
         <LinearLayout
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#ffffff"
             android:gravity="center"
@@ -21,19 +21,25 @@
 
             <ImageView
                 android:id="@+id/amazing_image_new"
-                android:layout_width="160dp"
-                android:layout_height="150dp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
                 android:layout_marginBottom="16dp"
-                android:src="@drawable/image_labtop1" />
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_labtop1"
+                />
 
             <TextView
                 android:id="@+id/amazing_name_new"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginBottom="4dp"
                 android:layout_marginTop="4dp"
-                android:text="Lenovo ida pad" />
+                android:layout_marginBottom="4dp"
+                android:text="Lenovo ida pad"
+                android:textStyle="bold"
+                android:textSize="@dimen/SizeNameProdouct"
+
+                />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -44,7 +50,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="left"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
@@ -52,10 +58,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="130000"
+                    android:textStyle="bold"
                     android:textColor="#07960b"
-                    android:textSize="11dp" />
+                    android:textSize="@dimen/SizeNameProdouct" />
 
                 <TextView
+                    android:visibility="gone"
                     android:id="@+id/amazing_preprice_new"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
